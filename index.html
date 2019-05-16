@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+    integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Birthday Mum</title>
+</head>
+
+<body>
+  <header>
+    <!--If we want to choose levels, in construction..-->
+    <!--<div class="levels">
+      <ul class="levels-list">
+        <li id="level-easy"><button class='btn' id="easy-btn">Easy</button></li>
+        <li id="level-medium"><button class='btn' id="medium-btn">Medium</button></li>
+        <li id="level-hard"><button class='btn' id="hard-btn">Hard</button></li>
+      </ul>
+    </div>-->
+    <h1>Birthday Mum</h1>
+
+  </header>
+  <div class="container">
+    <!--Child1-->
+    <section class="list">
+      <h2>Past words</h2>
+      <ul class="list-items">
+      </ul>
+    </section>
+    <!--Child2-->
+    <div class="vl"></div>
+    <!--Child3-->
+    <section class="game">
+      <!--ChildA-->
+      <div class="main">
+        <h2 class="time">Type the given words within <span class="text-success" id="seconds">5</span> seconds:</h2>
+        <p id="current-word"></p>
+        <input type="text" placeholder="Start typing..." autofocus>
+        <p id="alert"></p>
+      </div>
+      <!--ChildB-->
+      <div class="result">
+        <p class="time-text">Time left: <span id="time">0</span></p>
+        <p class="score-text">Score: <span id="score">0</span></p>
+      </div>
+      <!--ChildC-->
+      <div class="instructions">
+        <h2>Instructions:</h2>
+        <p>Type each word in the given amount of seconds to score. To play again, reload the page. Your score
+          will reset.</p>
+      </div>
+    </section>
+  </div>
+  <!--hidden by default, appears when the game ends-->
+  <section id="winner">
+    <p id="final-sentence"></p>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>

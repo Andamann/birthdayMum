@@ -1,0 +1,210 @@
+/*Variables*/
+:root {
+	--color: #c93653;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	background-repeat: no-repeat;
+	background-position: 0% 25%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+}
+
+header h1 {
+	margin: 0;
+	height: 8vh;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 10px;
+	background: var(--color);
+	color: #fff;
+}
+
+/*If we want to choose levels, in construction
+/*.levels {
+	position: absolute;
+	left: 75%;
+}
+
+.levels-list {
+	display: flex;
+}
+
+.levels-list > li {
+	list-style: none;
+	padding: 1% 0;
+}
+
+.btn {
+	border: none;
+	background-color: var(--color);
+}
+.levels-list .btn {
+	color: white;
+	padding: 5px 1rem;
+}
+
+.levels-list .btn:hover {
+	background: rgba(250, 250, 250, 0.2);
+}*/
+
+.container {
+	display: flex;
+	text-align: center;
+	margin: 20px 20px;
+}
+
+/*Child1*/
+.list {
+	width: 15%;
+	min-width: 150px;
+	height: auto;
+	text-align: center;
+}
+
+.list > ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/*Child2*/
+.vl {
+	border-left: 1.75px solid #aaa;
+	height: 500px;
+	margin-left: 20px;
+	height: 84vh;
+}
+
+/*Child3*/
+.game {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 20%;
+	margin-right: 15%;
+	width: 25rem;
+	text-align: center;
+}
+
+/*ChildA*/
+.time {
+	font-weight: lighter;
+	font-size: 1.3rem;
+	margin-bottom: 5px;
+}
+
+#seconds {
+	color: var(--color);
+}
+#current-word {
+	font-size: 5rem;
+}
+
+input {
+	margin-bottom: 15px;
+	padding: 5px 15px;
+	width: 23rem;
+	height: 1.5rem;
+	border-radius: 5px;
+	border-color: var(--color);
+}
+
+#alert {
+	font-style: italic;
+}
+
+/*ChildB*/
+.result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin-top: auto;
+}
+
+.result .time-text {
+	margin-right: auto;
+}
+
+.result > p {
+	margin: 0 2rem;
+}
+
+/*ChildC*/
+.instructions {
+	padding: 0;
+	margin-top: auto;
+}
+
+.instructions > h2,
+p {
+	margin: 0;
+}
+.instructions > h2 {
+	padding-bottom: 10px;
+}
+.instructions > p {
+	text-align: justify;
+}
+.instructions {
+	padding: 25px;
+	background: rgba(250, 250, 250);
+	color: #333;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(200, 200, 200, 0.8);
+}
+
+/*hidden by default, appears when the game ends*/
+#winner {
+	display: none;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	right: 20%;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Courgette', sans-serif;
+	text-align: center;
+}
+
+/*For medium screens --> we want the game to be first and the list after*/
+@media (max-width: 700px) {
+	.container {
+		flex-direction: column;
+		flex-flow: column-reverse;
+	}
+	.list {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.vl {
+		display: none;
+	}
+	.game {
+		margin: auto;
+	}
+	#alert {
+		margin-bottom: 20px;
+	}
+	.result {
+		margin-bottom: 20px;
+	}
+	#white {
+		color: white;
+	}
+}
+
+@media (max-width: 450px) {
+	.game {
+		margin: 1px;
+	}
+}
