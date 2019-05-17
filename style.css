@@ -242,6 +242,9 @@ p {
 	input {
 		width: 15rem;
 	}
+}
+
+@media (max-width: 374px) {
 	#white {
 		color: white;
 	}
