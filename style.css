@@ -12,13 +12,18 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	line-height: 1.4;
 }
 
 header h1 {
+	color: blue;
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	height: 8vh;
 	text-align: center;
 	padding-left: 20px;
@@ -204,6 +209,9 @@ p {
 }
 
 @media (max-width: 450px) {
+	header {
+		min-width: 450px;
+	}
 	.game {
 		margin: 1px;
 	}
