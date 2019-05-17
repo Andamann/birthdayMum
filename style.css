@@ -203,9 +203,6 @@ p {
 	.result {
 		margin-bottom: 20px;
 	}
-	#white {
-		color: white;
-	}
 }
 
 @media (max-width: 450px) {
@@ -220,6 +217,9 @@ p {
 	.main {
 		/*margin: 1px;*/
 		max-width: 450px;
+	}
+	#current-word {
+		font-size: 4rem;
 	}
 	input {
 		width: 20rem;
@@ -239,7 +239,11 @@ p {
 		/*margin: 1px;*/
 		max-width: 320px;
 	}
+
 	input {
 		width: 15rem;
+	}
+	#white {
+		color: white;
 	}
 }

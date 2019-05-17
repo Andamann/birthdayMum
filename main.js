@@ -135,7 +135,7 @@ function showWord(words) {
 		winner.style.display = 'inline'
 		html.style.backgroundImage = 'url("img/winner.jpg")'
 		final.innerHTML =
-			"Bien joué Moumoune, en vous souhaitant un très bon <span id='white'>anniversaire à toi et Mina!</span>"
+			"Bien joué Moumoune, en vous souhaitant <span id='white'>un très bon anniversaire à toi et Mina!</span>"
 	}
 }
 
