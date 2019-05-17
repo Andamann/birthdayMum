@@ -12,13 +12,18 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	padding: 0;
 	line-height: 1.4;
 }
 
 header h1 {
+	color: blue;
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	height: 8vh;
 	text-align: center;
 	padding-left: 20px;
@@ -204,7 +209,37 @@ p {
 }
 
 @media (max-width: 450px) {
+	header {
+		/*max-width: 450px;*/
+		min-width: 450px;
+	}
 	.game {
 		margin: 1px;
+	}
+	.game,
+	.main {
+		/*margin: 1px;*/
+		max-width: 450px;
+	}
+	input {
+		width: 20rem;
+	}
+}
+
+@media (max-width: 320px) {
+	header {
+		min-width: 320px;
+	}
+	.container {
+		margin: 0;
+		padding: 0;
+	}
+	.game,
+	.main {
+		/*margin: 1px;*/
+		max-width: 320px;
+	}
+	input {
+		width: 15rem;
 	}
 }
