@@ -65,6 +65,10 @@ header h1 {
 	margin: 20px 20px;
 }
 
+.container > * {
+	max-width: 100%;
+}
+
 /*Child1*/
 .list {
 	width: 15%;
